@@ -20,6 +20,20 @@
 
 This repository is a starting point for JavaScripts projects, according to Microverse standards.
 
+## Getting Started
+
+After creating a directory, cd into it, initialize npm, install webpack locally, and install the webpack-cli (the tool used to run webpack on the command line):
+```sh
+npm init -y
+npm install webpack webpack-cli --save-dev
+```
+
+To set ut the HTMLWebpackPlugin, adjust the webpack.config.js file and run `$ npm install --save-dev html-webpack-plugin`.
+
+After that, in order to import a CSS file from a JS module, you need to install and add the style-loader and css-loader to your module configuration. To do that, run `$ npm install --save-dev style-loader css-loader` and add the module rule in your webpack.config.js.
+
+Lastly, to set up a live server, run `$ npm install --save-dev webpack-dev-server` and confire devServer at the webpack configuration file.
+
 ## Author
 
 👩🏼‍💻 **Vanessa Aoki**
