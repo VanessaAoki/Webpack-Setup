@@ -34,6 +34,23 @@ After that, in order to import a CSS file from a JS module, you need to install 
 
 Lastly, to set up a live server, run `$ npm install --save-dev webpack-dev-server` and confire devServer at the webpack configuration file.
 
+### Setting up linters
+
+**ESLint**
+To install run `$ npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`. 
+
+To run the linters do `$ npx eslint .`
+
+**Stylelint**
+To install run `$ npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`. 
+
+To run the linters do `$ npx stylelint "**/*.{css,scss}" .`
+
+### Setting up Jest
+
+To install run `$ npm install --save-dev jest` and add `"test": "jest"` to your package.json.
+Write your test files and simply run `$ npm run test`.
+
 ## Author
 
 👩🏼‍💻 **Vanessa Aoki**
